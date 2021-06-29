@@ -1,0 +1,51 @@
+@import "../_global.scss";
+
+.card-item {
+    border: 0.1rem solid #bfbfbf;
+    border-radius: 0.8rem;
+    min-height: 47rem;
+    width: 24.5rem;
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        padding: 1.6rem;
+    }
+    &__img {
+        width: calc(100% + 4rem);
+        height: 20rem;
+        object-fit: cover;
+        margin-bottom: 2rem;
+    }
+    &__description {
+        @include font("Manrope", 1.6rem, 400, 150%, #160a29);
+    }
+    &__price {
+        @include font("Manrope", 2.4rem, 700, 150%, #160a29);
+    }
+    .delivery-info {
+        @include font("Inter", 1.4rem, 400, 0.018rem, #787885);
+    }
+    &__btn {
+        align-items: flex-end;
+
+        background: #FFFFFF;
+        border: 1px solid #4C29CC;
+        box-sizing: border-box;
+        border-radius: 4px;
+        padding: .6rem 1.12rem;
+        max-width: 12rem;
+        cursor: pointer;
+        @include font("Inter", 1.4rem, 500, 2rem, #4C29CC);
+        svg {
+            margin-right: 1rem;
+        }
+    }
+
+    .test {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+}

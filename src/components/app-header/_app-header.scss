@@ -1,0 +1,65 @@
+@import "../_global.scss";
+
+.header {
+    position: relative;
+    &__row {
+        margin-top: 4rem;
+        // display: flex;
+        // justify-content: space-between;
+        // align-items: flex-start;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+    }
+    &__sidebar {
+        margin-top: 1.5rem;
+    }
+    &__logo {
+        margin-left: 3.2rem;
+    }
+    &__serc-inp {
+        @include font("Manrope", 2rem, 300, 158%, #19191d);
+        min-width: 50rem;
+        padding: 0.8rem;
+        border-radius: 9.9rem;
+        border: none;
+        background: #ededf0;
+        padding-left: 3.7rem;
+    }
+    .search-panel {
+        position: relative;
+        margin: 0 3.5rem;
+    }
+    .search-icon {
+        position: absolute;
+        top: 0.7rem;
+        left: 0.6rem;
+    }
+    .close {
+        position: absolute;
+        top: 1.5rem;
+        right: 1.5rem;
+    }
+    &__add {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        cursor: pointer;
+        max-width: 7rem;
+        .add-text {
+            @include font("Manrope", 1.6rem, 400, 2.2rem, #4d2392);
+        }
+    }
+    &__favorites {
+        margin: 0 3.3rem;
+    }
+    .register-link {
+        .register-btn {
+            padding: 1.4rem 7rem;
+            background: #4d2392;
+            border: none;
+            border-radius: 8px;
+            @include font("Manrope", 1.6rem, 400, 2.2rem, #f9f7fd);
+        }
+    }
+}

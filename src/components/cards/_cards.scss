@@ -1,0 +1,8 @@
+@import "../_global.scss";
+
+.cards__list {
+    margin: 11rem 0;
+    display: grid;
+    grid-template-columns: repeat(4, 24rem);
+    grid-gap: 7.7rem;
+}
