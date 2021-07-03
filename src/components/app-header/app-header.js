@@ -5,7 +5,15 @@ import { Link } from 'react-router-dom';
 import './_app-header.scss';
 
 const AppHeader = () => {
-	const isAuth = useSelector((state) => state.userReducer.isAuth);
+	// const isAuth = useSelector((state) => state.userReducer.isAuth);
+
+	// let isAuth = false;
+
+	const [isAuth, setIsAuth] = useState(false)
+
+	useEffect(() => {
+		setIsAuth(localStorage.getItem('token') ? true : false);
+	});
 
 	return (
 		<header className='header'>

@@ -1,6 +1,6 @@
 import axios from 'axios';
-import { loaded, error } from '../redux-components/base';
-import { setUser } from '../redux-components/userReducer';
+import { loaded, error } from '../redux-components/main-reducer';
+import { setUser } from '../redux-components/user-reducer';
 
 export const fetchCards = () => {
 	return (dispatch) => {

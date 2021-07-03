@@ -1,0 +1,58 @@
+@import "../../_global.scss";
+
+.add-product {
+    input,
+    textarea {
+        padding: 1.5rem;
+        width: 100%;
+        margin: 1rem 0;
+        box-shadow: inset 0px -.2rem .1rem rgba(0, 0, 0, 0.25);
+    }
+    input,
+    textarea {
+        @include font("Manrope", 1.4rem, 400, 1.9rem, #160a29);
+    }
+    margin: 7rem 0;
+    &__row {
+        display: flex;
+    }
+    .col-left {
+        width: 30%;
+        margin-right: 4rem;
+        label {
+            margin: 2rem;
+        }
+    }
+    &__wrapper {
+        background: #fff;
+        border-radius: 8px;
+    }
+    .col-right {
+        width: 35%;
+    }
+    &__text {
+        @include font("Manrope", 1.4rem, 400, 1.9rem, #160a29);
+    }
+    &__img {
+        width: calc(100% + 4rem);
+        height: 30rem;
+        object-fit: cover;
+        border-radius: 0.8rem;
+        box-sizing: border-box;
+    }
+    .unload {
+        margin-top: 1rem
+    }
+    .unload-text {
+        @include font("Manrope", 1.8rem, 500, 2.5rem, #160a29);
+        margin-left: 1rem;
+    }
+    &__btn {
+        margin-top: 4rem;
+        padding: 1.4rem 3.3rem;
+        background: #4D2392;
+        border-radius: 8px;
+        border: none;
+        @include font("Manrope", 1.6rem, 400, 2.2rem, #F9F7FD);
+    }
+}

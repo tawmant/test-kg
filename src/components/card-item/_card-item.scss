@@ -3,19 +3,19 @@
 .card-item {
     border: 0.1rem solid #bfbfbf;
     border-radius: 0.8rem;
-    min-height: 47rem;
     width: 24.5rem;
     &__wrapper {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        height: 100%;
         padding: 1.6rem;
+        min-height: 47rem;
     }
     &__img {
-        width: calc(100% + 4rem);
-        height: 20rem;
+        width: 21rem;
+        height: 21rem;
         object-fit: cover;
+        border-radius: 4px;
         margin-bottom: 2rem;
     }
     &__description {

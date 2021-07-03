@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { fetchCards } from '../../redux/async-actions/AsyncActions';
-import { requested } from '../../redux/redux-components/base';
+import { Link } from 'react-router-dom';
+import { requested, getCards } from '../../redux/redux-components/main-reducer';
 import Spinner from '../spinner/spinner';
 import Error from '../error/error';
 import CardItem from '../card-item/card-item';
@@ -10,15 +10,20 @@ import './_cards.scss';
 
 const Cards = () => {
 	const dispatch = useDispatch();
-	const state = useSelector((state) => state.reducer);
+	const state = useSelector((state) => state.mainReducer);
 
 	useEffect(() => {
 		dispatch(requested());
-		dispatch(fetchCards());
+
+		dispatch(getCards());
 	}, []);
 
 	if (state.loading) {
-		return <Spinner />;
+		return (
+			<div className='d-flex justify-content-center m-5'>
+				<Spinner />
+			</div>
+		);
 	}
 
 	if (state.error) {
@@ -26,7 +31,12 @@ const Cards = () => {
 	}
 
 	const items = state.cards.map((item) => {
-		return <CardItem key={item.id} card={item} />;
+		return (
+			<Link to={`/${item.id}`} style={{display: 'block'}} >
+				
+				<CardItem key={item.id} card={item} />
+			</Link>
+		);
 	});
 
 	return <View items={items} />;

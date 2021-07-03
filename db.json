@@ -1,0 +1,84 @@
+{
+  "cards": [
+    {
+      "id": 1,
+      "name": "Малаакооооо",
+      "description": "Дамашнее",
+      "price": "10.00",
+      "amount": 10,
+      "image": "https://redmondclub.com/upload/iblock/ff0/ff082f1c616fbdce2c2c6dbee9f90ccf.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Шаурма",
+      "description": "Вкусная шаурма, понравится всем!",
+      "price": "500.00",
+      "amount": 5,
+      "image": "https://www.womanhit.ru/media/CACHE/images/articleimage2/2019/1/1_JsZIMrO/903e2d4661b705e5755e116cd5f435d7.gif"
+    },
+    {
+      "id": 5,
+      "name": "Самсы",
+      "description": "jsefjiesf!",
+      "price": "00.00",
+      "amount": 5,
+      "image": "https://static.1000.menu/img/content/19599/-samsa-iz-sloenogo-testa-samsa-iz-sloenogo-testa-v-duxovke_1490300267_1_max.jpg"
+    },
+    {
+      "name": "rdg",
+      "description": "drg",
+      "price": "234",
+      "image": "blob:http://localhost:3000/ce32aebc-c066-4d8f-be44-0dca61ac0f49",
+      "amount": "423",
+      "id": 1625248809072
+    },
+    {
+      "name": "sfesf",
+      "description": "esfs",
+      "price": "324",
+      "image": "blob:http://localhost:3000/182ba59d-5de7-48f1-9713-fa7a72228ae8",
+      "amount": "234",
+      "id": 1625251762483
+    },
+    {
+      "name": "гпгпшг",
+      "description": "впвк",
+      "price": "324244",
+      "image": "blob:http://localhost:3000/f44ffb2c-01cc-4982-a941-2aa9d08d57dc",
+      "amount": "432",
+      "id": 1625253011237
+    },
+    {
+      "name": "76е8",
+      "description": "пмор",
+      "price": "86788888888888888888888888888888888888888",
+      "image": "blob:http://localhost:3000/920a195f-292e-45a5-b2ec-e967b6962bb6",
+      "amount": "1",
+      "id": 1625253770739
+    },
+    {
+      "name": "вп",
+      "description": "кпв",
+      "price": "432",
+      "image": "blob:http://localhost:3000/689e5cd0-f681-4023-b41e-5784b9f61af5",
+      "amount": "34",
+      "id": 1625253801405
+    },
+    {
+      "name": "",
+      "description": "",
+      "price": "",
+      "image": "blob:http://localhost:3000/443cc664-81ea-41c3-a35b-9b3d3529a45c",
+      "amount": "",
+      "id": 1625253866662
+    },
+    {
+      "name": "лиза",
+      "description": "к2кк",
+      "price": "324",
+      "image": "blob:http://localhost:3000/0ad65615-2e7a-486e-a629-e15e01a84495",
+      "amount": "444324",
+      "id": 1625298997722
+    }
+  ]
+}

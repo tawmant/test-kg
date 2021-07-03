@@ -11,6 +11,7 @@ html {
 
 body {
     box-sizing: border-box;
+    background: #F9F7FD;
 }
 
 img {
@@ -21,7 +22,8 @@ a {
     text-decoration: none;
 }
 
-input {
+input, textarea {
+    border: none;
     outline: none;
 }
 
