@@ -38,6 +38,7 @@
         position: absolute;
         top: 1.5rem;
         right: 1.5rem;
+        display: none;
     }
     &__add {
         display: flex;
@@ -61,5 +62,9 @@
             border-radius: 8px;
             @include font("Manrope", 1.6rem, 400, 2.2rem, #f9f7fd);
         }
+    }
+    
+    .show {
+        display: block;
     }
 }

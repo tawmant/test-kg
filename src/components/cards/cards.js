@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
-import { requested, getCards } from '../../redux/redux-components/main-reducer';
+import { requested, getCards, onUpdateSearch } from '../../redux/redux-components/main-reducer';
 import Spinner from '../spinner/spinner';
 import Error from '../error/error';
 import CardItem from '../card-item/card-item';
@@ -32,8 +32,7 @@ const Cards = () => {
 
 	const items = state.cards.map((item) => {
 		return (
-			<Link to={`/${item.id}`} style={{display: 'block'}} >
-				
+			<Link to={`/${item.id}`} onClick={() => dispatch(onUpdateSearch(''))}>
 				<CardItem key={item.id} card={item} />
 			</Link>
 		);

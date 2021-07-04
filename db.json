@@ -25,60 +25,44 @@
       "image": "https://static.1000.menu/img/content/19599/-samsa-iz-sloenogo-testa-samsa-iz-sloenogo-testa-v-duxovke_1490300267_1_max.jpg"
     },
     {
-      "name": "rdg",
-      "description": "drg",
-      "price": "234",
-      "image": "blob:http://localhost:3000/ce32aebc-c066-4d8f-be44-0dca61ac0f49",
-      "amount": "423",
-      "id": 1625248809072
-    },
-    {
-      "name": "sfesf",
-      "description": "esfs",
-      "price": "324",
-      "image": "blob:http://localhost:3000/182ba59d-5de7-48f1-9713-fa7a72228ae8",
+      "name": "путин",
+      "description": "ауфафуц",
+      "price": "243",
+      "image": "blob:http://localhost:3000/894a63ed-4cc9-4cd0-9c0d-af8e66244abf",
       "amount": "234",
-      "id": 1625251762483
+      "id": 1625307679718
     },
     {
-      "name": "гпгпшг",
-      "description": "впвк",
-      "price": "324244",
-      "image": "blob:http://localhost:3000/f44ffb2c-01cc-4982-a941-2aa9d08d57dc",
-      "amount": "432",
-      "id": 1625253011237
-    },
-    {
-      "name": "76е8",
-      "description": "пмор",
-      "price": "86788888888888888888888888888888888888888",
-      "image": "blob:http://localhost:3000/920a195f-292e-45a5-b2ec-e967b6962bb6",
-      "amount": "1",
-      "id": 1625253770739
-    },
-    {
-      "name": "вп",
-      "description": "кпв",
+      "name": "еуые",
+      "description": "уыаы",
       "price": "432",
-      "image": "blob:http://localhost:3000/689e5cd0-f681-4023-b41e-5784b9f61af5",
-      "amount": "34",
-      "id": 1625253801405
+      "image": "blob:http://localhost:3000/df17073c-fda3-4aa8-9f78-4ec5a6f6589a",
+      "amount": "42",
+      "id": 1625309628334
+    },
+    {
+      "name": "тетс",
+      "description": "уыаыуа",
+      "price": "234",
+      "image": "blob:http://localhost:3000/d3a56c42-7254-4ff1-bfe2-a18b16e8c453",
+      "amount": "24",
+      "id": 1625399544602
+    },
+    {
+      "name": "лиза",
+      "description": "уыаыуаы",
+      "price": "2343",
+      "image": "blob:http://localhost:3000/08144199-e011-41c9-b7f1-a4f66a771689",
+      "amount": "423",
+      "id": 1625400178232
     },
     {
       "name": "",
       "description": "",
       "price": "",
-      "image": "blob:http://localhost:3000/443cc664-81ea-41c3-a35b-9b3d3529a45c",
+      "image": "blob:http://localhost:3000/60bb1d87-58ba-449c-962e-483c19d54a8f",
       "amount": "",
-      "id": 1625253866662
-    },
-    {
-      "name": "лиза",
-      "description": "к2кк",
-      "price": "324",
-      "image": "blob:http://localhost:3000/0ad65615-2e7a-486e-a629-e15e01a84495",
-      "amount": "444324",
-      "id": 1625298997722
+      "id": 1625400454497
     }
   ]
 }

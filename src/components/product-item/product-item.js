@@ -33,7 +33,7 @@ const ProductItem = () => {
 				<div className='product__left col-4'>
 					<img className='prodcut__img' src={image} alt={name} />
 				</div>
-				<div className='product__right col-8'>
+				<div className='product__right col-6'>
 					<div className='product__right-top'>
 						<h3 className='product__header'>{name}</h3>
 						<p className='product__description product-text'>
@@ -43,7 +43,6 @@ const ProductItem = () => {
 							Осталось: {amount}
 						</p>
 					</div>
-
 					<div className='product__right-bottom'>
 						<button className='product__btn-favorite'>
 							<svg

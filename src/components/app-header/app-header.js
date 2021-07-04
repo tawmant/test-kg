@@ -1,15 +1,20 @@
 import React, { useEffect, useState } from 'react';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
+import { onUpdateSearch } from '../../redux/redux-components/main-reducer';
 
 import './_app-header.scss';
 
 const AppHeader = () => {
-	// const isAuth = useSelector((state) => state.userReducer.isAuth);
+	const dispatch = useDispatch();
+	const state = useSelector((state) => state.mainReducer);
 
-	// let isAuth = false;
+	const [isAuth, setIsAuth] = useState(false);
+	const closeClasses = ['close', 'icon'];
 
-	const [isAuth, setIsAuth] = useState(false)
+	if (state.searchValue.length > 0) {
+		closeClasses.push('show');
+	}
 
 	useEffect(() => {
 		setIsAuth(localStorage.getItem('token') ? true : false);
@@ -77,9 +82,13 @@ const AppHeader = () => {
 						<input
 							type='text'
 							className='header__serc-inp'
+							value={state.searchValue}
+							onChange={(e) => dispatch(onUpdateSearch(e.target.value))}
 							id='ser-act'
 						/>
-						<div className='close icon'>
+						<div
+							onClick={() => dispatch(onUpdateSearch(''))}
+							className={closeClasses.join(' ')}>
 							<svg
 								width='14'
 								height='14'

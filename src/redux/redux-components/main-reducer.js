@@ -3,14 +3,32 @@ import { createSlice } from '@reduxjs/toolkit';
 const toolkitSlice = createSlice({
 	name: 'reducerMain',
 	initialState: {
+		AllCards: [],
 		cards: [],
 		loading: true,
 		error: false,
+		searchValue: '',
 	},
 	reducers: {
 		loaded(state, action) {
-			state.cards = action.payload;
+			state.AllCards = action.payload;
+			state.cards = state.AllCards;
 			state.loading = false;
+		},
+		onUpdateSearch(state, action) {
+			state.searchValue = action.payload;
+
+			if (state.searchValue.length === 0) {
+				state.cards = state.AllCards;
+			}
+
+			state.cards = state.AllCards.filter((item) => {
+				return (
+					item.name
+						.toLowerCase()
+						.indexOf(state.searchValue.toLowerCase()) > -1
+				);
+			});
 		},
 		requested(state) {
 			state.loading = true;
@@ -32,4 +50,5 @@ export const getCards = () => {
 };
 
 export default toolkitSlice.reducer;
-export const { loaded, requested, error } = toolkitSlice.actions;
+export const { loaded, requested, error, onUpdateSearch } =
+	toolkitSlice.actions;
